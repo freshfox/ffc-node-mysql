@@ -2,18 +2,43 @@
   "name": "ffc-node-mysql",
   "version": "1.0.0",
   "description": "A MySQL storage driver for ffc-node",
-  "main": "index.js",
-  "scripts": {
-    "test": "NODE_ENV=test mocha test"
+  "main": "dist/app/index.js",
+  "types": "dist/app/index.d.ts",
+  "directories": {
+    "test": "test",
+    "lib": "src"
   },
+  "engines": {
+    "node": "8.1.2"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "test/",
+    ".editorconfig",
+    "gulpfile.js",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "test": "NODE_ENV=test mocha dist/test",
+    "build": "gulp",
+    "preversion": "gulp && npm test",
+    "postversion": "git checkout master && git pull && git merge develop"
+  },
+  "author": "Dominic Bartl",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/freshfox/ffc-node-mysql.git"
   },
-  "author": "Dominic Bartl",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/freshfox/ffc-node-mysql/issues"
   },
-  "homepage": "https://github.com/freshfox/ffc-node-mysql#readme"
+  "homepage": "https://github.com/freshfox/ffc-node-mysql#readme",
+  "devDependencies": {
+    "ffc-node": "^5.0.3"
+  },
+  "peerDependencies": {
+    "ffc-node": "^5.0.3"
+  }
 }
