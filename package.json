@@ -1,0 +1,19 @@
+{
+  "name": "ffc-node-mysql",
+  "version": "1.0.0",
+  "description": "A MySQL storage driver for ffc-node",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freshfox/ffc-node-mysql.git"
+  },
+  "author": "Dominic Bartl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freshfox/ffc-node-mysql/issues"
+  },
+  "homepage": "https://github.com/freshfox/ffc-node-mysql#readme"
+}
