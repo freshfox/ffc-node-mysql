@@ -39,7 +39,7 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.7",
     "@types/should": "^8.3.0",
-    "ffc-node": "^5.0.3",
+    "ffc-node": "^5.0.4",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-tsb": "^2.0.3",
@@ -50,5 +50,9 @@
   },
   "peerDependencies": {
     "ffc-node": "^5.0.3"
+  },
+  "dependencies": {
+    "inversify": "^4.2.0",
+    "reflect-metadata": "^0.1.10"
   }
 }
